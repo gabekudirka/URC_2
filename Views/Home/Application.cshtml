@@ -1,0 +1,140 @@
+﻿<!--
+  Author:    Gabrielius A Kudirka
+  Date:      09/06/2020
+  Course:    CS 4540, University of Utah, School of Computing
+  Copyright: CS 4540 and Gabrielius A Kudirka - This work may not be copied for use in Academic Coursework.
+
+  I, Gabrielius A Kudirk, certify that I wrote this code from scratch and did not copy it in part or whole from
+  another source.  Any references used in the completion of the assignment are cited in my README file.
+
+  File Contents
+
+       This is the application page for the URC website. Here students can register an account with the research
+    coordinator so that they can apply for research opportunities.
+-->
+
+<div class="container">
+
+    <form class="well form-horizontal" id="contact_form">
+        <br />
+        <h1 id="application-header"><b>Application Form</b></h1><br>
+        <!--First name Input-->
+        <div class="form-group">
+            <label class="col-md-4 control-label">First Name</label>
+            <div class="col-md-4 inputGroupContainer">
+                <div class="input-group">
+                    <input name="first_name" placeholder="First Name" class="form-control" type="text">
+                </div>
+            </div>
+        </div>
+        <!--Lasst name Input-->
+        <div class="form-group">
+            <label class="col-md-4 control-label">Last Name</label>
+            <div class="col-md-4 inputGroupContainer">
+                <div class="input-group">
+                    <input name="last_name" placeholder="Last Name" class="form-control" type="text">
+                </div>
+            </div>
+        </div>
+        <!--UID Input-->
+        <div class="form-group">
+            <label class="col-md-4 control-label">UID</label>
+            <div class="col-md-4 inputGroupContainer">
+                <div class="input-group">
+                    <input name="UID" placeholder="UID" class="form-control" type="text">
+                </div>
+            </div>
+        </div>
+        <!--Email Input-->
+        <div class="form-group">
+            <label class="col-md-4 control-label">E-Mail</label>
+            <div class="col-md-4 inputGroupContainer">
+                <div class="input-group">
+                    <input name="email" placeholder="E-Mail Address" class="form-control" type="text">
+                </div>
+            </div>
+        </div>
+        <!--Academic year Input-->
+        <div class="form-group">
+            <label class="col-md-4 control-label">Academic Year</label>
+            <div class="col-md-4 inputGroupContainer">
+                <select name="academic_year" class="form-control">
+                    <option>Select Year</option>
+                    <option>Freshman</option>
+                    <option>Sophomore</option>
+                    <option>Junior</option>
+                    <option>Senior</option>
+                </select>
+            </div>
+        </div>
+        <!--Major Input-->
+        <div class="form-group">
+            <label class="col-md-4 control-label">Major</label>
+            <div class="col-md-4 inputGroupContainer">
+                <div class="input-group">
+                    <input input name="major" placeholder="Computer Science" class="form-control" type="password">
+                </div>
+            </div>
+        </div>
+        <!--Skills Input-->
+        <div class="form-group">
+            <label class="col-md-4 control-label">Skills</label>
+            <div class="col-md-4 inputGroupContainer">
+                <div class="input-group">
+                    <textarea input name="Skills" placeholder="Enter Skills..." class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+            </div>
+        </div>
+        <!--Interests Input-->
+        <div class="form-group">
+            <label class="col-md-4 control-label">Areas of Interest</label>
+            <div class="col-md-4 inputGroupContainer">
+                <div class="input-group">
+                    <textarea input name="Interests" placeholder="Enter Interests..." class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+            </div>
+        </div>
+        <!--Resume Upload-->
+        <div class="form-group">
+            <label class="col-md-4 control-label">Upload Resume</label>
+            <div class="col-md-4 inputGroupContainer">
+                <div class="custom-file">
+                    <input input name="resume" type="file" class="custom-file-input" id="customFile" data-toggle="tooltip" data-placement="top" title="Click here to select a file">
+                    <label class="custom-file-label" for="customFile">Choose file</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <br />
+            <div class="col-lg-4 inputGroupContainer">
+                <div class="form-check">
+                    <input input name="alerts" class="form-check-input" type="checkbox" value="" id="defaultCheck1" data-toggle="tooltip" data-placement="top" title="Click to accept">
+                    <label class="form-check-label" for="defaultCheck1">
+                        I would like to be sent alerts about potential research opportunities
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-lg-4 inputGroupContainer">
+                <div class="form-check">
+                    <input input name="alerts" class="form-check-input" type="checkbox" value="" id="defaultCheck1" data-toggle="tooltip" data-placement="top" title="Click to accept">
+                    <label class="form-check-label" for="defaultCheck1">
+                        I accept the  <a href="#" data-toggle="tooltip" data-placement="top" title="Click to read the terms and conditions">terms and conditions</a>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <!--Submit button-->
+        <div class="form-group">
+            <label class="col-md-4 control-label"></label>
+            <div class="col-md-4 inputGroupContainer">
+                <br />
+                <a href="/Home" class="btn btn-primary btn-lg">Submit</a>
+            </div>
+        </div>
+    </form>
+</div>

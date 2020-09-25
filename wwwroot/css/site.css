@@ -1,0 +1,339 @@
+﻿/**
+ * Author:    Gabrielius A Kudirka
+ * Date:      09/01/2020  *Course:    CS 4540, University of Utah, School of Computing
+ * Copyright: CS 4540 and Gabrielius A Kudirka - This work may not be copied for use in Academic Coursework.
+ *
+ * I, Gabrielius A Kudirka, certify that I wrote this code from scratch and did 
+ * not copy it in part or whole from another source.  Any references used 
+ * in the completion of the assignment are cited in my README file and in
+ * the appropriate method header.
+ *
+ * File Contents
+ *
+ *    This is the css file for all of the pages currently on the URC website. It contains
+    some default styling as well as styling I have added to the pages I created.
+ */
+
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+    color: #0366d6;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px; /* Vertically center the text there */
+}
+
+/*-------------------- My Setup Stuff ------------------------*/
+
+html, body {
+    font-family: 'Poppins', sans-serif;
+    color: #222
+}
+
+
+/*-------------------- Navbar ------------------------*/
+
+.navbar {
+    padding: .3rem;
+    background-color: #969696;
+}
+
+.navbar-nav {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+#navbar-logo {
+    height: 60px;
+    width: 60px;
+}
+
+#navbar-identifier {
+    padding-left: 42%;
+    line-height: 15px;
+    font-size: 18px;
+}
+
+#navbar-identifier span {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+#logout {
+    padding-top: 5px;
+}
+
+/*-------------------- Home Page ------------------------*/
+
+.carousel-inner img {
+    width: 100%;
+    height: 400px;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+}
+
+    .carousel-caption h1 {
+        font-size: 400%;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 12px #000;
+    }
+
+    .carousel-caption h3 {
+        font-size: 200%;
+        font-weight: 400;
+        text-shadow: 1px 1px 8px #000;
+    }
+
+.btn-primary {
+    background-color: red;
+    border: 1px solid #a30b00;
+}
+
+    .btn-primary:hover {
+        background-color: #a30b00;
+        border: 1px solid #a30b00;
+    }
+
+.jumbotron {
+    padding: 1rem;
+    border-radius: 0;
+}
+
+.learn-more-text {
+    width: 60%;
+}
+
+.learn-more-img {
+    width: 40%;
+}
+
+    .learn-more-img img {
+        border: 10px solid rgba(186, 186, 186, .8)
+    }
+
+/*-------------------- Opportunities Page ------------------------*/
+#title {
+    background-image: url('images/banner2.png');
+    height: 175px;
+    font-size: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+    padding-left: 10px;
+}
+
+#opportunities-table {
+    max-width: 100%;
+    width: 100%;
+    border-collapse: collapse;
+    background: #FFFFFF;
+}
+
+.rows tr:nth-child(even) {
+    background-color: #dbd9d9;
+    height: 120px;
+}
+
+.rows tr:nth-child(odd) {
+    background-color: #f7f7f7;
+    height: 120px;
+}
+
+.header th {
+    background-color: #666666;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    height: 40px;
+    text-indent: 10px;
+    color: black;
+}
+
+.header tr {
+    border: 1px solid;
+}
+
+.header th.name {
+    width: 35%;
+}
+
+.header th.description {
+    width: 45%;
+}
+
+.header th.picture {
+    width: 20%;
+}
+
+.opportunity-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.text div {
+    margin-left: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.identifier-text {
+    font-weight: bold;
+}
+
+.image-sizing img {
+    margin-left: 50px;
+    height: 100px;
+    width: 140px;
+}
+
+/*-------------------- Details Page ------------------------*/
+#details-card {
+    height: 800px;
+    width: 85%;
+    border-collapse: separate;
+    border-radius: 25px;
+    border: 2px solid;
+    box-shadow: 4px 8px rgba(43, 43, 43, 0.6);
+    background-color: aliceblue;
+}
+
+#details-title th.primary {
+    width: 60%
+}
+
+#details-title th.secondary {
+    width: 40%
+}
+
+#details-title div {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    margin-left: 40px;
+    margin-top: 20px;
+    text-decoration: underline;
+}
+
+#details-title th {
+    height: 80px;
+}
+
+#details-info td {
+    height: 350px;
+    vertical-align: top;
+}
+
+#details-info div {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 40px;
+}
+
+#details-picture {
+    margin-top: 10px;
+    height: 110%;
+    width: 90%;
+    border: 1px solid black;
+}
+
+#apply-button {
+    margin-top: 60px;
+    border-radius: 25px;
+    background: #ff0000;
+    padding: 20px;
+    width: 210px;
+    height: 70px;
+    font-weight: bolder;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 1px solid black;
+}
+
+.text-header {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 40px;
+    vertical-align: text-top;
+}
+
+.description-text {
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 40px;
+    margin-right: 30px;
+    vertical-align: text-top;
+}
+
+/*-------------------- Application Page ------------------------*/
+
+#application-header {
+}
